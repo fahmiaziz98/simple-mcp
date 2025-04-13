@@ -4,7 +4,7 @@ A minimal implementation of **MCP (Model Context Protocol)** using:
 
 - [Tavily](https://docs.tavily.com/documentation/api-reference/endpoint/search) for web search.
 - [Cherry Studio](https://docs.cherry-ai.com/cherrystudio/download) as the MCP client.
-- LLM (OpenAI, Groq, Gemini, etc)
+- API Key (OpenAI, Groq, Gemini, etc)
 
 ---
 
@@ -22,26 +22,12 @@ A minimal implementation of **MCP (Model Context Protocol)** using:
 
 ---
 
-## Getting Started
-### Download Cherry Studio
-
-- **Windows**: [Download EXE](https://github.com/CherryHQ/cherry-studio/releases/download/v1.1.17/Cherry-Studio-1.1.17-setup.exe)  
-- **macOS**: [Download DMG](https://github.com/CherryHQ/cherry-studio/releases/download/v1.1.17/Cherry-Studio-1.1.17-x64.dmg)  
-- **Linux**: [Download AppImage](https://github.com/CherryHQ/cherry-studio/releases/download/v1.1.17/Cherry-Studio-1.1.17-x86_64.AppImage)
-
-#### For Linux Users
-
-```bash
-chmod +x Cherry-Studio-1.1.17-x86_64.AppImage
-./Cherry-Studio-1.1.17-x86_64.AppImage
-```
-
----
+### Getting Started
 
 #### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/fahmiaziz98/simple-mcp.git
+git clone https://github.com/your-username/simple-mcp.git
 cd simple-mcp
 ```
 
@@ -85,7 +71,7 @@ uv pip install -e .
   --directory
   /home/your-username/Projects/simple-mcp
   run
-  main.py
+  get_stock_price.py
   ```
 - **Environment Variables**:
   ```
@@ -104,10 +90,34 @@ Example configuration:
 
 ---
 
+### Download Cherry Studio
+
+- **Windows**: [Download EXE](https://github.com/CherryHQ/cherry-studio/releases/download/v1.1.17/Cherry-Studio-1.1.17-setup.exe)  
+- **macOS**: [Download DMG](https://github.com/CherryHQ/cherry-studio/releases/download/v1.1.17/Cherry-Studio-1.1.17-x64.dmg)  
+- **Linux**: [Download AppImage](https://github.com/CherryHQ/cherry-studio/releases/download/v1.1.17/Cherry-Studio-1.1.17-x86_64.AppImage)
+
+#### For Linux Users
+
+```bash
+chmod +x Cherry-Studio-1.1.17-x86_64.AppImage
+./Cherry-Studio-1.1.17-x86_64.AppImage
+```
+please follow the tutorial below, you only need to change the name of the application with Cherry-Studio...AppImage
+- [Cursor AI: From Installation to Mastery on Linux 2025 (Tutorial)](https://dev.to/mesonu/how-to-install-cursor-ai-editor-on-linux-ubuntu-2025-update-3kji)
+  
+  Note: Download image cherry.png (search on google) and move using following cmd
+  ```bash
+  sudo mv cherry.png /opt/cherry.png
+  ```
+
+---
+
 ### Available Tool
 
 - **get_articles**  
-  Fetches and summarizes articles using Tavily search.
+- **get_stock_price**
+- **get_stock_price_history**
+- **compare_stocks**
 
 ---
 
